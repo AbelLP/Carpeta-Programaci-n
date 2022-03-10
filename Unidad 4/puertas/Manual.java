@@ -1,6 +1,6 @@
 package ejercicio_puertas;
 
-public class Manual implements Bloqueo_Desbloqueo{
+public class Manual /*implements Bloqueo_Desbloqueo*/{
 	protected boolean bloqueo;
 	private int num;
 	
@@ -8,7 +8,7 @@ public class Manual implements Bloqueo_Desbloqueo{
 		super();
 	}
 
-	public Manual(int n) {
+	public Manual(int num) {
 		super();
 		bloqueo=false;
 		this.num=num;

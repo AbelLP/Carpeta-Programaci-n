@@ -5,11 +5,10 @@ public class Puerta implements Bloqueo_Desbloqueo{
 	private int num;
 	
 	public Puerta() {
-		super();
+		
 	}
 
 	public Puerta (int num) {
-		super();
 		bloqueo=false;
 		this.num=num;
 	}

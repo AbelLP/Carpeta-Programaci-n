@@ -5,11 +5,9 @@ public class Ventana implements Bloqueo_Desbloqueo{
 	private int num;
 
 	public Ventana() {
-		super();
 	}
 
 	public Ventana(int num) {
-		super();
 		bloqueo=false;
 		this.num=num;
 	}
