@@ -1,36 +1,23 @@
 package ejerciciosMatrices;
 import java.util.*;
 public class Ejercicio4 {
-	static Scanner teclado=new Scanner(System.in);
-	final int TAM_FILAS=3, TAM_COL=5;
-	String[] alum=new String[3];	//en el vector de los alumnos va el nombre de las asignaturas
-	int[][] notas=new int[TAM_FILAS][TAM_COL];
+	NotasAlumnos notas;
+	String mod[];
 	
 	public Ejercicio4() {
-		cargarMatriz();
-		alum=cargarVector();
-		visualizar();
+		notas=new NotasAlumnos();
+		mod=new String[3];
+		mod=notas.cargarVector();
+		notas.cargarMatriz(mod);
+		notas.visualizar();
 	}
 	
-	public void cargarMatriz() {
-		
-	}
-	
-	public String[] cargarVector() {
-		for(int i=0; i<3; i++) {
-			System.out.println("Inserte nombre de la asignatura.");
-			alum[i]=teclado.nextLine();
-			teclado.nextLine();
-		}
-		return alum;
-	}
-	
-	public void visualizar() {
-		
-	}
 	
 	public static void main(String[] args) {
-		new Ejercicio4();
+		Ejercicio4 ej4=new Ejercicio4();
+		ej4.mod=ej4.notas.cargarVector();
+		ej4.notas.cargarMatriz(ej4.mod);
+		ej4.notas.visualizar();
 	}
 
 }
